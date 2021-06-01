@@ -1,3 +1,9 @@
+require('bootstrap')
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+window.axios = require('axios');
+window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'

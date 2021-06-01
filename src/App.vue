@@ -1,9 +1,10 @@
 <template>
   <div id="nav">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">About</router-link> |
+    <router-link :to="{name:'exam'}">Exam</router-link>
   </div>
-  <router-view/>
+  <router-view :key="$route.fullPath"/>
 </template>
 
 <style lang="scss">
